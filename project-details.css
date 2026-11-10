@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets//fonts/Inter-VariableFont_opsz\,wght.ttf') format('ttf');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap; /* Keeps text visible while loading */
+}
+
+:root {
+    --main-font: 'Inter', Arial, Helvetica, sans-serif; 
+    --color-text: #EAF1EA;
+    --color-primary: #A9C9AA;
+    --color-secondary: #3D4D61;
+    --color-accent: #7D79AB;
+    --color-bg: #040704;
+    --color-secondary-20: rgba(61, 77, 97, 0.20);
+}
+
+body {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+
+    background-color: var(--color-bg);
+    font-family: var(--main-font);
+    color: var(--color-text);
+}
+
+header {
+    padding-block: 1rem;
+}
+
+header a {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    background: rgba(61, 77, 97, 0.30);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+header a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+header a:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+video {
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--color-accent);
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    margin-inline-start: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin-inline-start: 2rem;
+}
+
+ul {
+    margin-inline-start: 2rem;
+}
+
+ol {
+    margin-inline-start: 2rem;
+}
+
+audio {
+    margin-inline-start: 2rem;
+}

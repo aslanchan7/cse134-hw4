@@ -1,0 +1,303 @@
+@font-face {
+  font-family: 'Inter';
+  src: url('/assets//fonts/Inter-VariableFont_opsz\,wght.ttf') format('ttf');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap; /* Keeps text visible while loading */
+}
+
+:root {
+    --main-font: 'Inter', Arial, Helvetica, sans-serif; 
+    --color-text: #EAF1EA;
+    --color-primary: #A9C9AA;
+    --color-secondary: #3D4D61;
+    --color-accent: #7D79AB;
+    --color-bg: #040704;
+    --color-secondary-20: rgba(61, 77, 97, 0.20);
+}
+
+body {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+
+    background-color: var(--color-bg);
+    font-family: var(--main-font);
+    color: var(--color-text);
+}
+
+nav {
+    display: flex;
+    max-width: fit-content;
+    margin-inline: auto;
+    justify-content: center;
+
+    gap: 4rem;
+    padding-block: 2rem;
+}
+
+nav a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color-primary);
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+}
+
+nav a:hover {
+    cursor: pointer;
+    color: var(--color-accent);
+}
+
+nav a:focus {
+    cursor: pointer;
+    color: var(--color-accent);
+}
+
+landing-page-section {
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+landing-page-intro {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+landing-page-intro h1 {
+    font-size: 4rem;
+    margin-bottom: -1rem;
+}
+
+landing-page-intro h2 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+}
+
+landing-page-intro p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+landing-page-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+landing-page-buttons a {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    background: rgba(61, 77, 97, 0.30);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+landing-page-buttons a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+landing-page-buttons a:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+#landing-page-img {
+    aspect-ratio: 1;
+    width: 20rem;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    margin-left: 3rem;
+}
+
+.polaroid-picture img {
+    display: flex;
+    margin-inline: auto;
+    width: 100%;
+}
+
+about-me-section {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin-inline: auto;
+    border-radius: 8px;
+    background-color: var(--color-secondary-20);
+    padding-inline: 3rem;
+    padding-block: 1rem;
+    margin-block: 2rem;
+}
+
+about-me-section h2 {
+    align-self: center;
+    color: var(--color-primary);
+    font-size: 2rem;
+    line-height: 0;
+}
+
+#projects {
+    max-width: fit-content;
+    margin-inline: auto;
+    color: var(--color-primary);
+    font-size: 2rem;
+}
+
+project-cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+    height: 30rem;
+    background-color: var(--color-secondary-20);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+
+.project-card h3 {
+    color: var(--color-accent);
+    padding-inline: 1rem;
+    font-size: 1.5rem;
+    margin-block: 1rem;
+}
+
+/* All <p> tags after <h3> in .project card will have this margin-inline style */
+.project-card h3 ~ p {
+    margin-inline: 1rem;
+} 
+
+project-card-info {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    top: -4rem;
+    margin-block-end: -4rem;
+    
+    height: fit-content;
+    background: rgba(15, 21, 22, 0.79);
+}
+
+/* Only apply this margin-inline to <p> tags that are directly under project-card-info */
+project-card-info > p {
+    margin-inline: 1rem;
+}
+
+.project-card:hover {
+    scale: 1.02;
+}
+
+.project-card:focus {
+    scale: 1.02;
+}
+ 
+#load-more-button {
+    display: block;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-block: 1rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    background: rgba(61, 77, 97, 0.30);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+#load-more-button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+#load-more-button:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+form {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+fieldset {
+    border-color: var(--color-primary);
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+legend {
+    color: var(--color-primary);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+form button {
+    display: block;
+    max-width: fit-content;
+    margin-inline: auto;
+    margin-block-start: 1rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    background: rgba(61, 77, 97, 0.30);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+form label {
+    font-size: 1rem;
+    margin-inline-end: 1rem;
+}
+
+form button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+form button:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+label-input-container {
+    display: flex;
+    flex-direction: column;
+    margin-block-end: 1rem;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    landing-page-section {
+        flex-direction: row;
+    }
+}

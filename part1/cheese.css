@@ -1,0 +1,77 @@
+:root {
+    --background-color: #11270B;
+    --primary-color: #71B340;
+    --secondary-color: #669d31;
+    --primary-text-color: #dddddd;
+    --secondary-text-color: #1d1d1d;
+    --visited-link-color: #598b2c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--primary-text-color);
+    line-height: 1.5;
+    background-color: var(--background-color);
+    
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 1.5rem;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.latin {
+    font-style: italic;
+}
+
+#warning {
+    background-color: var(--primary-color);
+    padding-inline: 1rem;
+    padding-block: 0.5rem;
+    color: var(--secondary-text-color);
+}
+
+blockquote {
+    border: 1px solid var(--primary-text-color);
+    margin: 0.5rem;
+    padding-inline: 1rem;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+a:visited {
+    color: var(--visited-link-color);
+}
+
+a:focus {
+    margin-inline: 0.5rem;
+}
+
+input:focus {
+    margin-inline: 0.5rem;
+}
+
+button:focus {
+    margin-inline: 0.5rem;
+}
+
+button {
+    padding-inline: 0;
+}
+
+button {
+    padding-inline: 1rem;
+}

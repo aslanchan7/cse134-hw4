@@ -1,0 +1,42 @@
+header {
+    padding-block: 1rem;
+}
+
+header a {
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    background: rgba(61, 77, 97, 0.30);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+header a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+header a:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+form {
+    border: 2px solid var(--color-text);
+    padding: 1rem;
+}
+
+form label {
+    display: inline-block;
+    padding-block-end: 0.2rem;
+}
+
+textarea {
+    height: 5rem;
+    resize: none;
+}

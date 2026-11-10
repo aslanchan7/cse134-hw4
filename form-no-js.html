@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aslan Chan | Portfolio</title>
+        <link rel="icon" href="favicon.ico" />
+        <link rel="stylesheet" href="main.css" />
+        <link rel="stylesheet" href="form-no-js.css" />
+    </head>
+
+    <body>
+        <header>
+            <a href="/">Back</a>
+        </header>
+
+        <main>
+            <form method="post" action="https://httpbin.org/post" >
+                <label-input-container>
+                    <label for="name-field">Name</label>
+                    <input id="name-field" type="text" name="name" autocomplete="name" placeholder="Your Name" />
+                </label-input-container>
+
+                <label-input-container>                    
+                    <label for="email-field">Email</label>
+                    <input id="email-field" type="email" name="email" autocomplete="email" placeholder="Your Email" />
+                </label-input-container>
+                
+                <label-input-container>
+                    <label for="message-field">Message</label>
+                    <textarea id="message-field" name="message" placeholder="Write a message" ></textarea>
+                </label-input-container>
+                
+                <input hidden="hidden" name="possible_bot" value="true" />
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </main>
+    </body>
+</html>

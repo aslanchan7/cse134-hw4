@@ -40,3 +40,26 @@ textarea {
     height: 5rem;
     resize: none;
 }
+
+form input:user-invalid {
+    border: 2px solid red;
+}
+
+form input:user-invalid + span::before {
+    content: "(required)";
+    color: red;
+}
+
+input#email-field:user-invalid + span::before {
+    content: "(required, ensure valid email format)";
+    color: red;
+}
+
+form textarea:user-invalid {
+    border: 2px solid red;
+}
+
+form textarea:user-invalid + span::before {
+    content: "(required, min. character count is 10)";
+    color: red;
+}

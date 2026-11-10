@@ -18,17 +18,20 @@
             <form method="post" action="https://httpbin.org/post" >
                 <label-input-container>
                     <label for="name-field">Name</label>
-                    <input id="name-field" type="text" name="name" autocomplete="name" placeholder="Your Name" />
+                    <input id="name-field" type="text" name="name" autocomplete="name" placeholder="Your Name" minlength="1" maxlength="100" required="required" />
+                    <span></span>
                 </label-input-container>
 
                 <label-input-container>                    
                     <label for="email-field">Email</label>
-                    <input id="email-field" type="email" name="email" autocomplete="email" placeholder="Your Email" />
+                    <input id="email-field" type="email" name="email" autocomplete="email" placeholder="Your Email" required="required" />
+                    <span></span>
                 </label-input-container>
                 
                 <label-input-container>
                     <label for="message-field">Message</label>
-                    <textarea id="message-field" name="message" placeholder="Write a message" ></textarea>
+                    <textarea id="message-field" name="message" placeholder="Write a message" minlength="10" maxlength="1000" required="required"></textarea>
+                    <span></span>
                 </label-input-container>
                 
                 <input hidden="hidden" name="possible_bot" value="true" />

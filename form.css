@@ -45,13 +45,21 @@ form input:user-invalid {
     border: 2px solid red;
 }
 
-form input:user-invalid + span::before {
-    content: "(required)";
+form input + span {
+    display: none;
+}
+
+form textarea + span {
+    display: none;
+}
+
+form input:user-invalid + span {
+    display: block;
     color: red;
 }
 
-input#email-field:user-invalid + span::before {
-    content: "(required, ensure valid email format)";
+input#email-field:user-invalid + span {
+    display: block;
     color: red;
 }
 
@@ -59,7 +67,7 @@ form textarea:user-invalid {
     border: 2px solid red;
 }
 
-form textarea:user-invalid + span::before {
-    content: "(required, min. character count is 10)";
+form textarea:user-invalid + span {
+    display: block;
     color: red;
 }

@@ -13,6 +13,17 @@
     --color-secondary: #3D4D61;
     --color-accent: #7D79AB;
     --color-bg: #040704;
+    --color-card-info-bg: rgba(15, 21, 22, 0.79);
+    --color-secondary-20: rgba(61, 77, 97, 0.20);
+}
+
+[data-theme="light"] {
+    --color-text: #000000;
+    --color-primary: #5A8B5A;
+    --color-secondary: #3D4D61;
+    --color-accent: #9679AB;
+    --color-bg: #FFFFFF;
+    --color-card-info-bg: rgba(200, 200, 200, 0.8);
     --color-secondary-20: rgba(61, 77, 97, 0.20);
 }
 

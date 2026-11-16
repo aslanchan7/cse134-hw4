@@ -13,6 +13,17 @@
     --color-secondary: #3D4D61;
     --color-accent: #7D79AB;
     --color-bg: #040704;
+    --color-card-info-bg: rgba(15, 21, 22, 0.79);
+    --color-secondary-20: rgba(61, 77, 97, 0.20);
+}
+
+[data-theme="light"] {
+    --color-text: #000000;
+    --color-primary: #5A8B5A;
+    --color-secondary: #3D4D61;
+    --color-accent: #9679AB;
+    --color-bg: #FFFFFF;
+    --color-card-info-bg: rgba(200, 200, 200, 0.8);
     --color-secondary-20: rgba(61, 77, 97, 0.20);
 }
 
@@ -26,8 +37,42 @@ body {
     color: var(--color-text);
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+header button {
+    grid-column: 3;
+    justify-self: end;
+
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    background: var(--color-secondary-20);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+header button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+header button:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
 nav {
     display: flex;
+    grid-column: 2;
     max-width: fit-content;
     margin-inline: auto;
     justify-content: center;
@@ -95,7 +140,7 @@ landing-page-buttons a {
     padding: 0.8em 1em;
     border-radius: 8px;
     border: 2px solid var(--color-secondary);
-    background: rgba(61, 77, 97, 0.30);
+    background: var(--color-secondary-20);
     text-decoration-line: none;
     color: var(--color-text);
 }
@@ -190,7 +235,7 @@ project-card-info {
     margin-block-end: -4rem;
     
     height: fit-content;
-    background: rgba(15, 21, 22, 0.79);
+    background: var(--color-card-info-bg);
 }
 
 /* Only apply this margin-inline to <p> tags that are directly under project-card-info */
@@ -217,7 +262,7 @@ project-card-info > p {
     padding: 0.8em 1em;
     border-radius: 8px;
     border: 2px solid var(--color-secondary);
-    background: rgba(61, 77, 97, 0.30);
+    background: var(--color-secondary-20);
     text-decoration-line: none;
     color: var(--color-text);
 }
@@ -262,7 +307,7 @@ form button {
     padding: 0.8em 1em;
     border-radius: 8px;
     border: 2px solid var(--color-secondary);
-    background: rgba(61, 77, 97, 0.30);
+    background: var(--color-secondary-20);
     text-decoration-line: none;
     color: var(--color-text);
 }

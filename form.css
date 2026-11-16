@@ -1,9 +1,9 @@
 header {
-    display: block;
     padding-block: 1rem;
 }
 
 header a {
+    justify-self: start;
     display: inline-block;
     font-size: 1rem;
     font-weight: 600;

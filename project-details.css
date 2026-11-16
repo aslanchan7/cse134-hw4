@@ -6,6 +6,14 @@
   font-display: swap; /* Keeps text visible while loading */
 }
 
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-group(*),
+    ::view-transition-old(*),
+    ::view-transition-new(*) {
+        animation: none;
+    }
+}
+
 :root {
     --main-font: 'Inter', Arial, Helvetica, sans-serif; 
     --color-text: #EAF1EA;
@@ -38,10 +46,41 @@ body {
 }
 
 header {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    column-gap: 1rem;
     padding-block: 1rem;
 }
 
+header button {
+    grid-column: 3;
+    justify-self: end;
+
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8em 1em;
+    border-radius: 8px;
+    border: 2px solid var(--color-secondary);
+    background: var(--color-secondary-20);
+    text-decoration-line: none;
+    color: var(--color-text);
+}
+
+header button:hover {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
+header button:focus {
+    background-color: var(--color-primary);
+    color: var(--color-bg);
+    cursor: pointer;
+}
+
 header a {
+    justify-self: start;
     display: inline-block;
     font-size: 1rem;
     font-weight: 600;
